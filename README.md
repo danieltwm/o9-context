@@ -5,6 +5,7 @@ This repository provides structured documentation and reference files for o9/IBP
 ## Structure
 
 - `ibpl/` — IBPL syntax, tips, and example queries
+- `designer/` — Designer configuration, layouts, alerts, models, and reports
 
 Each folder contains multiple Markdown files focused on subtopics. All files can be referenced for context in Copilot-powered chat or documentation.
 
@@ -25,4 +26,4 @@ Each folder contains multiple Markdown files focused on subtopics. All files can
 - #### For best results:
 Start your session from the repo, or always mention the repo name in their first question if outside.
 - #### For specifically targeted requests:
-Reference specific files if your question is about a particular topic. E.g., “See `ibpl/ibpl-quick-reference.md` for related members examples to solve my following request ...”
+Reference specific files if your question is about a particular topic. E.g., “See `ibpl/ibpl-quick-reference.md` for related members examples to solve my following request ...”, or "See `designer/designer-model` for model configuration guidance ..."
