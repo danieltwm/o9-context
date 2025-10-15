@@ -1,0 +1,333 @@
+# Alert
+
+
+```
+The sender of emails is customizable. It can be changed if you modify the Default System Settings' field: EmailConnectionString. You
+need to ensure that after changing this setting, the Email MicroService is restarted.
+```
+```
+Configure Data Alerts
+Add Strategies for Alert Resolution called Resolution Plays
+Associate Resolution Play with the Alert
+Add the Created Alert to Relevant Report
+Time Based Scheduler
+```
+1. Login to the o9 Web UI with the relevant credentials.
+2. Go to the **Designer** workspace. The **Alerts** tab is displayed in the LHS pane and the **Alerts** icon is displayed in the
+**Model Designer** area.
+3. Move the pointer near **( )**. The **( )** icon is displayed to add the alert class.
+
+## Contents
+
+## Configure Data Alerts
+
+
+4. Click **( )** icon. The **Add new Alert Class** dialog box is displayed.
+5. Enter the relevant name in the **Alert Class Name** field.
+6. Enter the relevant description in the **Description** field.
+7. Click the Save **( )** icon. The new alert class is displayed under Alerts.
+8. Hover the pointer on the alert class. The **( )** icons are displayed to add a new alert and delete alert class
+
+respectively.
+
+9. Click **Add Alert ( )** icon. The **Alert Details** dialog box is displayed.
+10. Enter the relevant name in the **Name** field.
+11. Enter the relevant description in the **Description** field.
+12. Enter the relevant tooltip for the alert in the **ToolTip** field.
+
+```
+From the example above, an Alert Measure example is Excess Inventory Alert and an Underlying Alert Measure example would be
+Inventory Period and SCPWOSTarget.
+```
+
+13. Select the relevant value in the **Aggregation** list. The available values are:
+
+```
+a. Sum
+b. DistinctSum
+c. Min
+d. Max - Default Selection
+e. Median
+f. Avg
+g. AvgNotNull
+h. AvgNotNullorZero
+i. Computed
+j. LastChild
+k. FirstChild
+l. Null
+```
+14. Select the relevant option in the **Trigger Type** list. The available trigger type options are:
+
+```
+a. Auto : Triggers the alert whenever the alert condition is satisfied
+b. On Demand : Triggers the alert manually on demand
+c. Scheduled : Triggers the alert at scheduled intervals
+```
+15. Add granularity to the alert in two ways.
+
+```
+a. Use the drag and drop operation to move the dimensions from the DIMENSION tabbed area to the Granularity area.
+```
+
+b. Add the relevant measure for the data alert in the **Formula** field in the **High Status** , **Medium Status** and **Low Status** area.
+c. Click **Suggest** in the Granularity area.
+
+
+If the user tries to click Suggest without adding any measure, the following notification is displayed: **Granularity
+suggestions are based on the first measure detected in a Status Formula.**
+
+
+16. Enter data alert conditions in the **Formula** field in the **High Status** area.
+17. Select the relevant color in the **Cell Color** list.
+18. Select the relevant icon in the **Indicator Icon** list.
+19. Select the relevant color in the **Indicator Color** list.
+
+```
+Users can either type or drag and drop the measure from the PLAN tab to the Granularity area.
+```
+20. Select the relevant conditions in the **Medium Status** area.
+
+
+21. Select the relevant conditions in the **Low Status** area.
+22. Select the relevant conditions in the **Closed Status** area.
+
+```
+Closed Status is essentially the ‘ELSE’ condition for High+Medium+Low Status ‘IF’ condition.
+```
+23. Add Views for this alert in the Notifications area.
+
+
+24. Select the relevant checkbox in the **Views** area.
+25. Click **OK**. The folders for the data alert is displayed.
+26. Select the relevant folder for the data alert.
+27. Go to the **Inbox Template** area.
+
+
+28. Enter the relevant details. The alert notifications are displayed after the alert is triggered.
+29. Go to the **Email Template** area.
+30. Select the relevant roles which can receive this alert in the **Role Subscription** field.
+31. Enter the relevant subject in the **Subject Template** field.
+32. Enter the relevant body in the **Body Template** field.
+
+
+33. Select the relevant report in the **Pivot Report** list.
+
+
+When the alert is triggered, users with alert subscriptions receive alert emails.
+
+
+34. Select the **Enable Mobile Notifications** checkbox. The alert notifications are displayed on your mobile devices.
+35. Click Save Alert. The successful alert creation message is displayed and the alert is displayed below the Alert class.
+
+```
+To create and save an alert, users must enter the following details:
+Granularity
+Name
+Description
+At least one of the High/Medium/Low status conditions
+The rest of the fields are optional
+After an alert is saved, the user cannot change the Granularity or the Trigger Type
+You will receive the alert notifications on the UI and your email if the user role assigned to you has access to the alert measure
+and underlying measures.
+```
+36. Hover over the **Resolution Plays**.
+37. Click **( )**. The **Add Resolution Play** dialog box is displayed.
+
+## Add Strategies for Alert Resolution called Resolution Plays
+
+
+38. Enter the relevant name for the Resolution Play in the **Name** field. 39. Enter the relevant description for the
+Resolution Play in the **Description** field.
+40. Click **Save Resolution Play**. The Resolution Play is displayed under Resolution Plays.
+41. Click **Add New Scenario**. The **Add Play Scenario** dialog box is displayed.
+
+
+42. Enter the relevant name in the **Scenario Template Name** field.
+43. Enter the relevant description in the **Description** field.
+44. Select the relevant parameterized procedures for resolution scenarios in the **Procedure** list.
+45. Click **Save Play Scenario**. The scenario is displayed in the RHS pane.
+46. Click the previously created alert.
+47. Click **Add Resolution Play**. The **Add Alert Play** dialog box is displayed.
+
+## Associate Resolution Play with the Alert
+
+
+48. Select the relevant Resolution Play in the **Play Name** list.
+49. Add the relevant details for alert resolution in the **View** area.
+
+```
+The resolution plays redirect the user to the View which is selected below the section View , by default.
+You can configure a separate View for newly created scenarios in the New Scenario View section if required.
+```
+50. Click **Save Alert Play**. The Resolution Play is associated with the alert.
+
+
+51. Go to the report View where the measures are configured in the alert.
+52. Go to the **Design Layout**.
+53. Click the **Edit Report** tab.
+54. Click the **ALERT** tab in the LHS pane.
+55. Add the relevant alert to the **Measure** area.
+56. Go to the Widget properties dialog box.
+57. Select the **Show Conditional Format** checkbox.
+58. Click the Save **( )** icon. The alerts as per the High/Medium/Low/Closed status are displayed.
+
+## Add the Created Alert to Relevant Report
+
+
+59. Go to the **Designer** workspace to create a new action button.
+60. Select **Alert** in the **Type** list.
+61. Enter the relevant name in the **Name** field.
+62. Enter the relevant display name in the **DisplayName** field.
+63. Select the relevant icon in the **Icon** list.
+64. Go to the **Alert** tabbed area.
+
+```
+In the Alert tabbed area, there are two options for the action button execution:
+```
+```
+Run Play : If you select this, it will execute the resolution play and also trigger the alerts recalculation.
+Run Alert : If you select this, it will only trigger the alerts recalculation.
+```
+65. Select the **Run Play** checkbox.
+66. Select the relevant Resolution Play in the **Play** list.
+
+
+67. Click **Save**. The action button is saved.
+68. Add the alert action button to the target View of the Resolution Play.
+69. Go to the **Alert** View to resolve the alert.
+70. Right-click the alert indicator.
+71. Click **Show Alert Analytics**. The Alert Member Info dialog box is displayed.
+72. Click the resolution play to create a new scenario. The **Scenario Name** dialog box is displayed with the auto-filled
+name (Resolution Play + Date text format).
+
+
+73. Modify the name as required.
+74. Click **OK**. The View that was selected in the **New Scenario View** is displayed while associating the resolution play
+with the alert.
+
+```
+A new private scenario is created which has the given scenario name. If you view an already saved scenario,
+you are redirected to the View that is selected under the View section while associating resolution play with
+the alert.
+```
+75. Run the action button associated with the Resolution Play. The alert action buttons are of async type and after the
+action button is executed, the notification is displayed.
+
+
+76. Refresh the data. The new member values and alert states are displayed.
+
+The next time when you try to resolve the same alert after you click **Show Alert Analytics** , this earlier resolution is
+displayed to you. You can either select this scenario or create a new one as required.
+
+
+```
+The platform supports scheduling the execution of a Rule-type action button, using a datetime measure as the trigger.
+```
+```
+Why is this required?
+SRM workflows involve time-sensitive events, such as the bidding process, where buyers set precise opening and
+closing times for supplier participation. It is crucial that these bidding events commence and conclude simultaneously
+for all involved parties, strictly adhering to the buyer's defined schedule. Consequently, suppliers are restricted to
+submitting quote responses only within this specified timeframe and are prevented from editing or submitting outside of
+it. Within the platform, these events are governed by measure status and therefore, it is critical for the platform to
+support the ability to update the measure status and execute other required actions precisely at the scheduled event
+time.
+```
+```
+Prerequisites
+The Admin user role is required to access the Plans (offline) workspace.
+```
+```
+Setup
+```
+1. Login into the platform with the relevant credentials.
+2. Go to the **Plans (offline)** workspace.
+3. Click the **Add new record** button.
+
+## Time Based Scheduler
+
+
+4. Click **Event Based Scheduler** in the **Alert Type** list.
+5. Enter a name and description for your alert.
+
+
+6. Go to the **Trigger Config** tabbed area.
+7. Configure the following details:
+
+```
+Field Description
+```
+```
+Action Button (Mandatory)
+```
+```
+Specify the Rule type action button that this alert should trigger.
+```
+```
+Only the Rule type action button is supported in the action button config.
+```
+```
+Trigger Measure (Mandatory)
+```
+```
+The measure containing the scheduled execution time for the Action Button.
+```
+```
+The Trigger Measure must be of a datetime data type.
+```
+```
+Filter Expression (Optional) This determines whether the Action Button should execute.
+```
+
+```
+Action button and trigger measure configurations are single select.
+All the fields except for alert type are allowed to be edited after saving the event based scheduler alert.
+```
+8. Click **Submit** to save the event based scheduler alert. Once Alert is configured, the platform will automatically trigger
+the configured rule type action button as time hits the trigger time.
+
+```
+Payload Mapping : The platform provides the only trigger measure intersection details as a payload to the triggered rule type
+action button. This payload can be used by creating Parentattribute and parentmeasure type Field Bindings.
+The action button validations are not supported, any required validation should be taken before updating the trigger measure
+with datetime or use the Event based scheduler’s filter expression.
+The action button should be configured for the auto execute feature.
+```
+**User Workflow**
+
+1. Login to the platform with relevant credentials.
+2. Navigate to the workspace where the trigger measure is configured.
+3. Update the trigger measure with a future datetime.
+4. Configured rule type action button executes for this intersection once current time is equal to time updated in the
+measure. During the rule action button execution for the above intersection, the platform will pass this measure
+intersection members to rule action button in case parent type fieldbindings are created for these attributes and
+measure.
+
+```
+Event based scheduler alert only executes the future events from the time it is configured.
+Event based scheduler alert will trigger for events that have a time greater than the last triggered time. The "last triggered" time
+is defined as the last time the "Event based scheduler" alert was triggered. Example: If the last event was on July 25, 2025, at
+10:00 PM, and the current time is July 25, 2025, at 10:50 PM, any event with a time greater than 10:00 PM will be executed by
+the scheduler.
+It is the configurator's responsibility to create the necessary validations to ensure that new events are created with a time that is
+greater than or equal to the current time.
+When event based scheduler alert is configured for the first time, only the future date and time are considered for execution and
+events with a past datetime will not be executed.
+```
+
+```
+Design Considerations
+```
+```
+GraphCube to be running during events. If GraphCube is down then the event might need to be manually executed once the GraphCube
+comes up or corresponding event time has to be updated for event based scheduler to pick up.
+By default the current working View filter is applied for all the data. Only data in current working View are picked up by event based
+scheduler alert for execution
+Configured rule type action buttons that run at a specified event will only need the corresponding members as input.
+There might be some delay in triggering the action button for execution if there are more than 10-20 active events at any given time.
+```
+Retrieved from ‘https://platformwiki.o9solutions.com/index.php?title=Alert&oldid=38139’
+
+**This page was last modified on 26 September 2025, at 07:12.**
+
+

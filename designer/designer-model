@@ -1,0 +1,541 @@
+# Category:Model Designer
+
+```
+Model Designer - Overview
+Toggle Mode
+Unified Search for All Tabs
+Optional Filtering for Inactive Models Tabs
+Model Entities
+Dimension
+Plan
+Graph
+Rule
+Alert
+Features
+Where Used Report for Attributes
+Measures in Plugins
+Support Where Used for Measure and Dimension Attributes
+Multi Image Support
+Multiple Image Upload for End Users
+```
+```
+The Designer workspace enables a user to design a complete tenant data model in real time. A user can create any number of dimensions,
+attributes, and hierarchies. It allows a user to model any number of plans and measures which is required by the tenant data model without
+restarting the tenant GraphCubeServer.
+```
+```
+Click Edit Model on the upper-left of the Designer workspace and the Model Designer area is displayed.
+```
+```
+Tenant admin users need to build o9 model from the Designer workspace for speedy configuration and model
+development. The Designer workspace is used for model design and model maintenance. Earlier, different
+workspaces were used to design and maintain the tenant data model. The process consumed a great amount of time
+and understanding of data modelling steps. To configure various elements, users were required to switch to different
+workspaces.
+The Designer workspace also supports data modelling and management requirements.
+```
+## Contents
+
+## Model Designer - Overview
+
+
+```
+Designer Landing Page
+```
+```
+Note
+```
+```
+You cannot modify the model while working in the Report Designer because it displays the tenant model in the read-only mode.
+There is a behaviour change in the Designer’s inline search box. A user need to Press Enter to do a search. This change is done
+for improvement in performance. For more information on Change in Search Behaviour, click here (https://docs.google.com/doc
+ument/d/1oheXOEdjI4dAktDqLx_BLLVBAFxDm3q6LNRqXKf0KjA/edit?ts=5d8c88e2&pli=1#).
+```
+A user can configure the following elements:
+
+```
+Dimensions
+Attribute
+Member properties
+Plans
+Measure groups
+Measures
+Graphs
+Graph relationships
+Nodes
+Edge properties
+Rules
+Active rules
+Named sets
+Procedure
+```
+In Designer, two distinct modes exist for editing Model and Reports. In order to perform any action, users need to
+ensure that they are working in the correct edit mode. The user workflow is improved as the selection is made
+automatic. Users no longer need to toggle the edit modes, explicitly.
+The Edit Reports and Edit Model buttons in the Designer are no longer visible because the Toggle Mode is introduced.
+On the Designer load, both the models area and reports area are displayed. Users can navigate through the tabs to
+any entity that they need to view or edit.
+
+```
+Note If you click an entity, it is displayed in the Edit mode by default.
+All the secondary actions are available just as before.
+```
+### Toggle Mode
+
+
+```
+Measure Edit Area
+```
+```
+Report
+```
+If you click a measure, the measure edit area is displayed (as shown in the image below). Here, you can edit the
+measure config, and other primary or secondary actions can be performed just as before.
+
+```
+Note If you close the measure, it takes you to the original starting point (as shown in the Image: Designer Landing Page ).
+```
+If you click a report, it is displayed as the image shown below. If you click **( )** , the entity’s config is displayed as a
+
+pop-up window.
+
+```
+Note The actions to drag and drop entities to the reports area and the other secondary actions are available just as before.
+```
+In Designer, the Search box is placed above each of the Models tab to ensure that the user can find the entities that
+they are looking for quickly and easily.
+
+In Designer, the **Search** box is moved above each of the models tab.
+
+### Unified Search for All Tabs
+
+
+After you type a text in the **Search** box and click the search icon **( )** or press Enter, all the tabs are filtered by the
+provided string.
+
+
+If you switch to another tab, it will also be filtered for the same string.
+
+
+If you click the cross icon **( )** , it will remove the filtering.
+
+
+The user types a keyword in the Filter field and press Enter or clicks the Filter icon **( )**. The active tabs are filtered
+using the search keyword which is provided and all other tabs which contain matches display an indicator but in the
+inactive tabs, this filtering of trees becomes optional.
+
+1. Type a search keyword in the Filter field.
+
+### Optional Filtering for Inactive Models Tabs
+
+
+2. Press Enter or click the Filter icon **( )**. The active tab is filtered using the search keyword that is provided.
+3. Click the **Plan** tab. The unfiltered tree is displayed by default.
+4. Select the **Apply Filter** checkbox. The tree is filtered using the search keyword that is provided.
+
+
+5. Go to a tab which has no matches. An unfiltered tree is displayed with the following message: **no matches found**
+
+
+## Model Entities
+
+
+A tenant’s configuration on the platform consists of several different types of model entities, such as Dimensions, Plans,
+Graphs, Rules, etc. These are accessible through the left **Model** pane in Designer. An average tenant config contains
+hundreds of these entities which are highly interconnected.
+
+```
+A dimension entity is a collection of related objects called attributes (Level Attributes). For example, customer, product, or sales domain.
+```
+```
+Sales Forecast measure is described using the dimensions, such as product, sales domain and time, whereas a
+budget measure is described using different dimensions, such as spend domain and time.
+```
+```
+In the Designer, when a new entity, such as Dim, Attribute, Measure, etc. is added to a Dimension, it is displayed in an
+alphabetical order so that the user finds it easily.
+```
+```
+The Order Dimension's Position for Filters is the attribute placement in the filter pane of the Designer. The Order
+Dimension's Position for Filters can be changed from the Reports home page or dashboard.
+```
+```
+There were few actions on system entities that were causing data and start-up issues. Hence, these actions are now blocked.
+```
+```
+Add a Dimension
+```
+1. Go to the **Designer** workspace.
+2. Click the **DIMENSION** tab.
+
+### Dimension
+
+
+3. Click **( )** next to **All Dimensions**. The **Add a Dimension** dialog box is displayed.
+
+```
+Note
+```
+```
+To add any existing Dimension, you can also just click it. The related attributes and hierarchies are displayed automatically.
+To remove any related attributes or hierarchies, you can just click ( ) next to them. For example, if you select the Activity
+dimension then the Activity Name is automatically displayed as one of its attributes. In case, you do not need this attribute, you
+can click ( ) next to the Activity Name ( ) and it gets deleted.
+```
+```
+Note For more information on Attibute and Member Info, click Dimension
+```
+```
+Plans are the placeholder for the measure groups. They are logical groups of similar measure groups. The PLAN tab enables you to configure
+Plans, Measure Groups and Measures.
+```
+```
+Add a Plan
+```
+1. Go to the **Designer** workspace.
+
+### Plan
+
+
+2. Click the **Edit Model** tab. The **Model Designer** area is displayed.
+3. Click the **Plan** tab. The **Plan** tabbed area is displayed.
+
+
+4. Click **( )** next to the Search box. The **Add a Plan** dialog box is displayed.
+5. Type the name of the plan in the **Plan Name** box.
+6. Type the description of the plan in the **Description** box.
+7. Click **( )**. The relevant plan is added in the **Plan** tabbed area.
+
+```
+For more information, click Plan
+```
+```
+A Graph relates members in one dimension to members in another dimension (or in the same dimension) in a non-hierarchical manner. It is
+difficult to capture all possible cases of modelling in a hierarchical data structure. Graph relationship creates a direct link between one member
+to another member (or) one set of members to another set of members. Graph relationship has a To node and a From node, which will use
+prefixes To and From to represent the Destination and Source of the graph, respectively.
+```
+```
+For more information, click Graph
+```
+```
+Go to the Designer workspace and click the RULE tab to add the tenant specific rules. The changes that you make here is applied in real-time.
+```
+### Graph
+
+### Rule
+
+
+```
+The RULE tab allows:
+```
+```
+Active Rules for measure computations
+Named Sets for a set of members
+On Demand Procedures
+Data Security Rules
+```
+```
+Note Users with the admin user role do not need to restart the GraphCube server for these model changes.
+```
+```
+For more information, click Rule
+```
+```
+Receiving timely alerts enables users to take the required decisions to address the challenges posed by the changes to important metrics.
+```
+```
+Users can configure data alerts in Designer with the drag-and-drop operation instead of writing the IBPL queries (as
+was supported in the 1st generation Alerts in o9). These alerts can then be associated with the relevant reports.
+Users can also create strategies called Resolution Plays and associate those with appropriate alerts. These Resolution
+Plays offer a set of possibilities to systematically resolve the alerts.
+```
+```
+For more information, click Alert
+```
+```
+In a complex tenant configuration with many interdependencies between different model entities, the process of
+deciphering these relationships by manually clicking through the Designer UI is tedious. Easy and reliable access to
+this information is essential to understand the solution and to make changes to the configuration, like introduction of
+new entities or identification of obsolete entities. With this feature, configurators can see which reports a given attribute
+is used in.
+```
+1. Login to the o9 Web UI with the relevant credentials.
+2. Go to the **Designer** Workspace.
+
+### Alert
+
+## Features
+
+### Where Used Report for Attributes
+
+
+3. Click Edit Model > Dimension.
+4. Click any level attribute for which you want to see the Where Used report.
+5. A new button **Where Used** is displayed.
+6. Click the **Where Used** button. The **Where Used** tabbed area is displayed which displays the **Where Used** report for
+all usages of the selected attribute.
+
+```
+Note The Where Used report for attributes is available on demand.
+To see the report, click the Where Used button.
+```
+7. Click any measure group listed in the **Where Used** tabbed area. A new area is displayed (inline Designer View)
+showing the relevant configuration.
+8. Close the area.
+9. Click **Reports** in the **Where Used** pane. A list of reports where the level attribute is used is displayed.
+10. Click any report listed. A new area is displayed (inline Designer) showing the configuration for the chosen report.
+
+
+```
+Note The inline Designer View is for viewing only. Any changes applied on it can be previewed, but cannot be saved.
+For attributes, reports and measure groups where it is used are listed.
+```
+```
+Note
+```
+```
+The configurators will not know where the measures are used while working with the Designer workspace. Hence, they will not be
+aware of the impact of any changes that they might want to apply, or even if the measures were redundant. With this feature, the
+configurators can see where all measures are being used, so that they would be able to quickly identify the impact and make
+modifications accordingly.
+```
+```
+For more information, click #Support Where Used for Measure and Dimension Attributes.
+```
+The o9 tenant’s configuration consists of different entities, such as dimensions, attributes, measures, reports,
+workspaces and so on. Some entities reference other entities in their configurations. For example, a report references
+a set of attributes and measures that are used in it. In a typical implementation, these usage relationships between
+entities can be fairly complex. It is essential for a platform user to be able to visualize these relationships and
+understand them with ease in order to develop high quality solutions.
+
+This enhancement is a part of a series of enhancements to build comprehensive support for visibility of entity usage
+and dependency information in the platform. It introduces support for showing measure usage in plugins.
+
+Measure usage in plugins is available in Designer. It can be accessed by opening a measure’s config from the Plan
+tree. It is located in the **Where Used** tab as indicated in the screenshot below.
+
+All GraphCube plugins wherever a measure is used is displayed here. This includes the following types of plugins:
+
+```
+RScriptTimeSeries
+RScriptGeneralized
+PythonScript
+TalentMatchSolver
+StatForecast
+SummaryStats
+ReplaceNulls
+Pareto
+ReceiptsConstrainedPlan
+ReceiptsUnconstrainedPlan
+BosToInventory
+InventoryToBos
+EndingOnHandPlan
+```
+### Measures in Plugins
+
+
+```
+ReplenishmentPlan
+PeriodToDatePlan
+NetworkPlan
+SupplyChainSolver
+CumulativePlan
+LPSolver
+```
+```
+Note The tenant plugins are not displayed here. This includes JavaScript and Python plugins.
+```
+The configurators will not know where the measures are used while working with the Designer workspace. Hence, they
+will not be aware of the impact of any changes that they might want to apply, or even if the measures were redundant.
+With this feature, the configurators can see where all measures are being used, so that they would be able to quickly
+identify the impact and make modifications accordingly.
+
+**Measures**
+
+1. Login to the o9 Web UI with the relevant credentials.
+2. Go to the **Designer** Workspace.
+3. Click Edit Model -> Plan.
+4. Click any measure for which you want to see the **Where Used** report. The **Where Used** tab is displayed.
+5. Click the **Where Used** tab. A list of reports and action buttons where the measure is used is displayed.
+6. Click any report displayed. A new area is displayed, (inline designer) showing the configuration for the selected
+report.
+
+### Support Where Used for Measure and Dimension Attributes
+
+
+7. Close the area.
+8. Click any Action Button displayed. A new area is displayed, (inline designer) showing the configuration for the
+selected Action Button.
+9. Close the area.
+
+```
+Note The inline Designer View is for viewing only. Any changes applied on it can be previewed, but cannot be saved.
+For measures, reports and action buttons where it is used are displayed.
+```
+**Reports**
+
+1. Go to the **Designer** workspace.
+2. Click **Edit Reports**.
+3. Click any report to navigate to the Designer View. The **Where Used - Views** tab is displayed.
+
+A list of Views where the report is used is displayed.
+
+4. Click any of the Views displayed. The selected View is displayed.
+
+
+The planners often want to use more than just the SKU or the Brand name in reports to enhance the visibility. To
+support this, the platform had support for one image per member. However, for a number of customers especially in the
+retail sector, multiple images are required to help the planners and stakeholders visualize their portfolio.
+
+**Setting up the Member to Support Multiple Images**
+
+1. Login to the o9 Web UI with the relevant credentials.
+2. Go to the **Designer** workspace.
+3. Click the relevant dimension for the level attribute for which you want to upload the multiple images. In this example
+the Product dimension is selected.
+4. Click the Settings icon **( )** next to the relevant attribute in the **Attributes** area. In this example, ProductGroup
+attribute is selected.
+
+### Multi Image Support
+
+
+The Settings dialog box is displayed.
+
+5. Select the **Multiple Images** checkbox.
+6. Click **( )**. The changes are saved and your level attribute is set up to support the multiple images.
+
+```
+Note If you clear the Multiple Images checkbox, it will delete the internal property and the data associated with it.
+```
+**Uploading the Images**
+Create a .csv file with the member name and image source URL. The .csv should be in the following format:
+
+```
+Column headers - Dimension.LevelAttribute , Images
+Column content - Member1 , url1 | url2
+```
+
+For example:
+
+```
+Product.ProductGroup1 Images
+01360000070 https://wallpapercave.com/wp/wp9382347.jpg
+01360000000 https://wallpapercave.com/wp/wp9382347.jpg
+```
+```
+Note The URLs should not be enclosed in quotation marks (“”)
+The URLs should be separated by a pipe operator (|)
+```
+2. Upload the file using the SSIS job.
+
+**View the Images**
+
+1. Go to the report with the said level attribute configured.
+2. Click the relevant member name for which you want to see the images. The **Member Info** dialog box is displayed.
+
+
+```
+Note The number displayed below the thumbnails depicts the additional number of images associated with the member.
+```
+3. Click the thumbnail. The strip of images associated with the member is displayed.
+4. Click the thumbnails at the bottom to go to the required image.
+
+```
+Note The grid images are still pegged to the older functionality. Hence, the older flow remains as is for the grid images.
+```
+1. Login to the o9 tenant with relevant credentials.
+2. Go to the **Designer** workspace.
+3. Click the particular attribute for which you want to add multiple images.
+
+**Multiple Image Upload for End Users**
+
+
+```
+Ensure that the attribute has an attribute property whose data type is image and it is editable. You can check it by clicking on the
+settings icon of any attribute property.
+```
+4. Select **Image** in the **Data Type** list.
+5. Select the **Editable** checkbox.
+6. Click the settings icon of the attribute.
+7. Select the **Multiple Images** checkbox.
+8. Click the Save icon **( )**. The changes are saved.
+
+
+9. Navigate to any pivot using that attribute.
+10. Click the member for which you want to upload multiple images.
+
+A new upload icon **( )** to upload multiple images for the member is displayed in the Member Info dialog box.
+
+
+11. Click the Upload icon **( )**.
+12. Click **Browse** to upload the multiple images.
+
+```
+You can directly drop images here, or you can click Browse.
+```
+The **Open** dialog box is displayed.
+
+
+13. Select the relevant images.
+14. Click **Open**.
+15. Click **Save**. All the uploaded images are saved.
+
+
+The first image that you uploaded is displayed on the upper-left.
+
+You can click the **+** icon to display a carousel of the images.
+
+You can use the arrow icons to move around the carousel (Arrows will appear if onscreen real estate is not sufficient to
+display the multiple images uploaded).
+
+
+You can also click on the magnifying glass icon to see the uploaded images in the expanded mode.
+
+You can delete images if you click the ellipses icon **( )** on the upper-right of the images on the carousel and then
+
+click the **Delete** button.
+
+
+
+The image that is visible on the thumbnail will be displayed on the pivot.
+
+The supported file types for upload are JPG, PNG, BMP, or GIF. Any other type of file apart from these will display this
+notification: **File type not allowed** and the Save button will be disabled.
+
+
+The following 6 pages are in this category, out of 6 total.
+
+```
+Alert
+```
+```
+Dimension
+```
+```
+Graph
+```
+```
+Plan
+Platform Wiki - Table of Contents
+```
+```
+Rule
+```
+Retrieved from ‘https://platformwiki.o9solutions.com/index.php?title=Category:Model_Designer&oldid=28354’
+
+**This page was last modified on 15 December 2023, at 05:42.**
+
+## Pages in category ‘Model Designer’
+
+### A
+
+### D
+
+### G
+
+### P
+
+### R
+
+

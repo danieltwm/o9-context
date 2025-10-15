@@ -1,0 +1,922 @@
+# Category:Designer Mass Configuration
+
+```
+Reports Template
+Copy Reports
+Delete Reports
+Layout Template
+General Config
+Layout Translations
+Layout Roles
+Models Template
+Model Create & Update
+Create & Update Granularity
+Create & Update Named Node via Excel Template
+Rules Template
+Measure Group Granularity
+Add/Remove Grain(s) from Measure Group
+Graph Template
+Add Node
+Remove Node
+Mass Config for Action Button - Roles & Translations
+Mass Config for Roles of Action Buttons
+Mass Config for Translations of Action Buttons
+Config Exception Reports
+Plugins Exception Report
+```
+```
+Designer Mass Config for Reports is a feature in the Designer workspace that enables users to operate over a group of reports en masse. It addresses the following types of use
+cases:
+Change report Data and Widget Property (for example, enable audit trail, change subtotal settings, etc.)
+Change dimension, attribute, measure settings (for example, control attribute/measure visibility, change attribute alias used, change measure format etc.)
+Add or replace attributes or measure
+Change order of attributes on rows/columns
+```
+```
+How to filter for reports to operate on
+```
+1. Select the reports you want to operate on. The following filtering options are available:
+
+```
+Reports that are used in specific Workspace/Page/Views
+Reports that are not used in any workspace
+Reports that are used in specific Excel workbooks
+Reports that are accessible to specific roles
+Reports that use or do not use a certain dimension, attribute, or measure
+Reports that are anchor reports
+```
+2. Click **Apply Filters** when done.
+3. Select the checkbox next to the relevant option in the **Narrow down by report type** area.
+
+```
+Note Full support exists only for Pivot and Line Chart.
+Limited support exists for other report types.
+```
+## Contents
+
+## Reports Template
+
+
+4. Select the checkbox next to the relevant report config that you want to load in the **Select config to show** area.
+
+```
+Note This is segregated depending on the level at which it is maintained.
+```
+```
+Report level config
+Data properties
+Widget properties
+Others
+Report Entity level config for specific entity type used either on filter or on report
+Dimension
+Attribute
+Measure/Graph Edge
+Report Entity Property config for specific entities in a report used either on filter or on report
+Dimension
+Attribute
+```
+5. Click **Show Config** when done. A grid is displayed with the config selected in the previous step.
+
+**Grid Edits**
+All config fields that are editable are indicated with a light yellow background. You can edit their values as required. You can click Save changes to
+save the changes.
+
+**Actions Buttons**
+Action buttons are visible on the upper-right of the grid. These can be used to operate over the entire selection visible to perform the specified
+actions. You may also narrow down the selection sent to the action button by using the on-grid filters.
+
+
+```
+Note The config changes made through action buttons are auto-committed. This means that after you submit the action button, the changes are directly updated in theconfig without the additional “Save changes” step.
+```
+The following actions are provided:
+
+**Add Entity**
+
+This button can be used to add an entity of a certain type (attribute/measure/dimension) to the selected reports in a certain usage
+(filter/row/column). For example, you can replace the Week attribute to all selected reports.
+
+**Replace Entity**
+
+This button can be used to replace an entity of a certain type (attribute/measure/dimension) that’s used in the selected reports in a certain usage
+(filter/row/column) with another entity of the same type. For example, you can replace the Week attribute with the Month attribute for all selected
+reports.
+
+**Change Entity Usage**
+This button can be used to move an entity of a certain type (attribute/measure/dimension) that’s used in the selected reports to another usage
+(filter/row/column). For example, you can move the Week attribute from row to column for all selected reports.
+
+
+**Reorder Entity**
+This button can be used to reorder all entities of a certain type (attribute/measure/dimension) that are used in the selected reports. For example, you
+can set all Time dimension attributes in the order Year > Quarter > Month > Week for all selected reports.
+
+**Invalid Operations**
+While using action buttons, there may be cases when the selected action does not apply to one or more of the selected reports. In such cases,
+these reports are skipped and the remaining reports are updated. A message is also displayed indicating this.
+
+
+**Limitations**
+
+```
+The copy-paste of data between cells is not supported.
+The editing of IBPL expression type fields is not supported (example - Measure Filter).
+You cannot null out the nullable properties (example - Include Nulls For Series).
+The grid does not automatically refresh after the action button completion.
+```
+```
+Note These limitations are not permanent.
+```
+
+```
+There are use cases where model configurations of reports need to be changed slightly and a user needs to copy the reports en masse. Hence, a new button Copy Reports is
+introduced in the current enhancement so that users can copy the report all together.
+```
+1. Select the relevant reports to copy en masse.
+2. Click **Copy Reports** to copy all the selected reports. The **Copy Reports** dialog box is displayed.
+3. Enter the relevant details.
+
+```
+Note To prefix or suffix a user defined name, click the relevant option for the Copy report format field.
+```
+4. Click **Copy**. All the relevant reports are copied en masse.
+
+### Copy Reports
+
+
+```
+There are use cases where users want to delete existing reports and need to delete the reports en masse. Hence, a new button Delete Reports is introduced in the current
+enhancement so that users can delete the report all together.
+```
+1. Select the relevant reports to delete en masse.
+2. Click **Delete Reports** to delete all the selected reports. The **Delete Reports** dialog box is displayed.
+3. Click **Delete**. A message is displayed: **Are you sure you want to delete 14 reports?**
+4. Click **OK**. All the relevant reports are deleted en masse.
+
+```
+The method for setting translations becomes much faster with this enhancement. Translations of web layout, such as Workspace, PageGroup, Page, View, View Report can be
+mass edited with the help of this template in the Designer Mass Config. Users can filter the reports based on the workspaces and roles.
+```
+```
+This enhancement allows you to view all the general properties of layout entities, such as Workspace, Page Group, Page, View, View Report in one
+single place.
+```
+### Delete Reports
+
+## Layout Template
+
+### General Config
+
+
+```
+This is available only in the read-only mode.
+```
+1. Click the **Mass Config** button.
+
+The **Create a New Config template** area is displayed on the left of the screen.
+
+2. Click **Layout**.
+3. Go to the **Filter for layouts to work with** area.
+
+
+4. Click the **All Workspaces** list to filter the layouts with which you need to work.
+5. Click **All Roles** list to filter the layouts related to a specific user role.
+6. Go to the **Select config to show** area.
+7. Select the relevant layout config. The following options are available:
+
+
+```
+Workspace
+Page Group
+Page
+View
+View Report
+```
+8. Click the **Show Config** button. A read-only grid is displayed based on the filters and selections you made.
+
+All the cells are displayed in the gray color. However, there are few cells, which are displayed in a slightly darker shade of the gray color. This
+indicates that the property is not applicable to the layout entity that it is intersected with.
+
+Example: the **Icon** property is applicable to the **Demand Planning** workspace, where as for all other layout entities, it is not applicable. Hence, it is
+displayed in a slightly darker shade of gray color.
+
+
+Similarly all other properties displayed in a slightly darker shade of gray are not applicable to the layouts they are intersecting with.
+
+
+```
+For many customers, there are projects with users in different regions. Hence, they would like to see the Platform UI in their local language and this can be achieved by setting
+translations.
+```
+1. Go to the **Designer** workspace.
+2. Click the **Mass Config** button. The **Create a New Config Template** area is displayed on the left.
+3. Click **Layout**.
+
+```
+Functionality Template: Layout Translations
+```
+```
+Filter for Reports
+You can use workspaces to filter the reports with which you need to work.
+```
+```
+You can also use roles to filter the reports with which you need to work.
+```
+### Layout Translations
+
+
+**Select Config**
+After you filter the reports with which you need to work, select the relevant layout config:
+
+```
+Workspace
+Page Group
+Page
+View
+View Report
+```
+**Show Config**
+After you filter and select the relevant config, click the **Show Config** button.
+
+A grid will be displayed based on the filters and selections you made.
+
+**Mass Edit Grid**
+The grid display allows users to update the layout translations for all the available languages in the Platform.
+
+
+```
+Workspace
+Page Group
+Page
+View
+View Report
+```
+**Hidden Columns**
+Hidden columns are the languages that a user can select to set the layout translation.
+
+You can enable or disable the hidden columns (languages) based on the requirement.
+
+**Save Changes**
+Users can update layout translations through this grid and save the changes which are reflected in the Platform UI. Example: Enter _colaboración’_ as
+Spanish (Mexico) translation for workspace _Brewing Collaboration_
+
+**Cancel Changes**
+The **Cancel changes** button is next to the **Save changes** button.
+
+**Filter on Grid**
+You can filter all these columns in the grid.
+
+
+Filter has many options in the list.
+
+**Reset All**
+The **Reset All** button resets the filtering and config selection.
+
+**Download Excel File**
+You can download the excel file of layout translations for the selected filters and config.
+
+**Upload Excel File**
+You can upload an excel file of layout translations through mass config. Post which all the translations in the uploaded excel are reflected in the
+Platform UI.
+
+
+```
+The Platform layout designer UI allows configurators to grant or deny access to various web layout entities one at a time. There was a need to support this activity through the
+Designer Mass Config button. The Layout roles is a feature in the Designer/Mass Config/Layout template, which enables you to operate web layouts as a whole. It addresses the
+following types of use cases:
+Mass edit/view roles assigned to the web layout, such as Workspace, Page, View.
+Access to a user role can be granted or denied directly at the Page/View levels without explicitly granting access to its parent levels.
+```
+1. Go to the **Designer** workspace.
+2. Click the **Mass Config** button.
+
+```
+The Create a new config template area is displayed on the left.
+```
+### Layout Roles
+
+
+3. Click **Layout**. The **Layout** area is displayed.
+4. Select the relevant options in the **Filter for layouts to work with** area.
+
+
+5. Select the relevant options in the **Select config to show** area.
+
+```
+The Layout Translations are selected by default.
+```
+6. Click **Layout Roles**.
+7. Click **Show Config**.
+
+**Grid**
+
+```
+All roles that are associated with the filtered workspaces are displayed in columns.
+All the records of web layout, such as Workspace, Page Group, Page, View, View Report are displayed in rows.
+If the role is assigned to a layout entity then the value of the cell is True.
+If the role is not assigned to a layout entity then the value of the cell is False.
+```
+**Editing Values in the Grid**
+
+
+```
+When a role is switched to TRUE or FALSE at the workspace level, all Views below it are switched to TRUE or FALSE.
+When a role is present as FALSE at a View, a page and the workspace level, and it is switched to TRUE for one of the pages, then all its Views and its parent workspace are
+switched to TRUE (All other pages and Views are unaffected).
+When a role is present as FALSE at a View, a page and the workspace level, and it is switched to TRUE for one of the Views, then its parent page and workspace are
+switched to TRUE (All other pages and Views are unaffected).
+```
+```
+Mass Config Behavior
+The mass config supports the present system behavior of assigning and denying roles for the layouts. Additionally, it also supports the bottom to top
+scenario that addresses use case - 2 and use case - 3 in fewer steps.
+If you use mass config, access to a user role can be granted or denied directly at the Page/View levels, without explicitly granting access to its
+parent levels.
+The following table describes the system behavior while setting the user roles using mass config:
+```
+```
+Use
+Case# Use Case
+```
+```
+User Action in Mass
+Config UI Role Assignment System Behavior
+```
+```
+1 User wants Role_1 to accesseverything under W_1 User assigns Role_1 atW_1 level Role_1 is assigned to W_1 and all its children (P_1,V_1, V_2, P_2, V_3, V_4) User with Role_1 can see everythingunder W_
+```
+```
+2 User wants Role_2 to accesseverything under P_2 User assigns Role_2 atP_2 level Role_2 is assigned to P_2 and its parent W_1 andits children (V_3, V_4) User with Role_2 can see everythingunder W_1 \ P_
+```
+```
+3 User wants Role_3 to access onlyV_3 User tries to grant Role_3at V_3 level Role_3 is assigned to (W_1, P_2, V_3) User with Role_2 can see everythingunder W_1 \ P_2 \ V_
+```
+```
+Role Assignment at Page Group Level
+The Web Layout edit mode doesn't support role assignment at the Page group level. In mass config, this will be supported as follows. The value
+displayed against a page group is an aggregation of the values of all page group’s children.
+```
+```
+TRUE : When all the pages and Views in a page group have the value True then the page group has the value True.
+FALSE : When all the pages and Views in a page group have the value False then the page group has the value False.
+PARTIAL : When the pages and Views in a page group have a mix of True and False values then the page group has the value Partial.
+```
+```
+In the image below, the highlighted icon is the indicator of the value Partial.
+```
+```
+The method for setting translations becomes much faster with the following enhancement.
+Bulk edit model entity translations
+Translations and alias translations of dimensions and attributes
+Translations of measure groups, measures, graphs and edges
+```
+```
+Model Translations
+```
+1. Go to the **Designer** workspace.
+2. Click the **Mass Config** button.
+
+## Models Template
+
+
+The **Create a new config template** area is displayed on the left.
+
+3. Click **Models**. The **Models** pane is displayed.
+4. Select the relevant option in the first filter - **Select entity type to show**.
+
+**Dimensions Translations**
+The second filter - **Filter By Dimensions** is automatically generated, when you select **Dimensions** in the first filter - **Select entity type to show**.
+
+```
+Note All dimensions are selected by default.
+You can filter by particular dimensions as well.
+```
+
+The third filter - Select config to load provides you two options:
+
+```
+All Translations
+All Alias Translations
+```
+In this example, the option _All Translations_ is selected.
+
+You can click **Show Config** and set translations for dimensions, attributes and attribute properties using the grid that is displayed. For example: The
+**Target** attribute and the **Target prop** property has translations in English - United Kingdom.
+
+Click **Save changes** after setting translations.
+Or,
+Click **Cancel changes** if you do not need to save the changes you made.
+
+Similarly, you can set alias translations for dimensions and attributes using the grid that is displayed.
+
+**Hidden Columns** : All the languages that the o9 Platform supports are hidden in the grid. You can select the checkbox next to the relevant
+languages to enable the hidden languages in the grid.
+
+
+**Plans Translations**
+The second filter - **Filter By Plans** is automatically generated, when you select **Plans** in the first filter - **Select entity type to show**.
+
+```
+Note All measure groups are selected by default.
+You can filter by particular measure groups and measures as well.
+```
+You can click **Show Config** and set translations for measure groups and measures using the grid that is displayed. For example: Measure group
+**020 Week** has translation as **Week** in English - United States.
+
+Click **Save changes** after setting translations.
+Or,
+Click **Cancel changes** if you do not need to save the changes you made.
+
+**Hidden Columns** : All the languages that the o9 Platform supports are hidden in the grid. You can select the checkbox next to the relevant
+languages to enable the hidden languages in the grid.
+
+
+**Graphs Translations** The second filter - **Filter By Graphs** is automatically generated, when you select **Graphs** in the first filter - **Select entity type
+to show**.
+
+```
+Note All graphs are selected by default.
+You can filter by particular graphs as well.
+```
+You can click **Show Config** and set translations for graphs and edges using the grid that is displayed. For example: Edge **DPG Disc Date** has a
+translation as **From DPG Disc Date** in English - United States.
+
+Click **Save changes** after setting translations.
+Or,
+Click **Cancel changes** if you do not need to save the changes you made.
+
+**Hidden Columns** : All the languages that the o9 Platform supports are hidden in the grid. You can select the checkbox next to the relevant
+languages to enable the hidden languages in the grid.
+
+
+**Filter Columns in a Grid**
+Any columns in the grid displayed in the **Models** template can be filtered by key words. Example: Filter Measure **column** for measures that contain
+**brand** keyword in its name.
+
+You can filter columns with many words, such as Is null, etc.
+
+
+```
+If a configurator wants to add plans, measure groups, and measures in bulk, he will need to run DDLs in the Deployment workspace to achieve this. Maintaining and running
+DDLs is a time consuming and error prone process. To eliminate this, the current enhancement is providing the ability to create plans, measure groups, measures and critical
+measure properties using an Excel upload.
+```
+1. Login to a tenant with the relevant credentials.
+2. Go to the **Designer** workspace.
+3. Click the **Mass Config** button.
+4. Click **Models** in the **Create a new config template** area.
+5. Click **Measure Groups** in the next page.
+6. Select the relevant filters in the **Filter by Measure Groups** area.
+7. Select Measure Group/Measure General in the **Select config to load** area.
+
+```
+The Show Config button is disabled by default.
+```
+8. Click **Download Excel Template**. An excel template is downloaded.
+
+```
+The excel file downloaded will have the related plans and measures of the measure groups that were filtered.
+Rename and delete of entities are not possible using this template. However, you can update the properties of the existing entities and create new ones.
+```
+9. Update the values in the relevant cells (to edit measure properties).
+10. Insert values in new rows to create new plans and measure groups and measures.
+11. Click **Upload** once the template has been filled out.
+
+## Model Create & Update
+
+
+After the upload is complete, the **Ignored Records** pop-up window is displayed indicating the failed or ignored records.
+
+In addition, the notification is displayed in the **Notifications** area of the Global header.
+
+
+12. Click **View More**. The mass config excel upload job in the **My Jobs** area is displayed.
+13. Click the link in the **Status** column to view the error obtained from the GraphCube.
+14. Click the link in the **Bad Record** column to download the excel file uploaded with two additional columns.
+
+```
+The first column indicates the status and the other column indicates the error message.
+```
+15. Resolve the errors.
+16. Re-upload the file for successful creation or updation of entities.
+
+
+```
+As a configurator, if you need to add plans, measure groups, and measures in bulk, you will need to run the DDLs in the Deployment workspace. Maintaining and running DDLs is
+a time consuming and error prone process. To eliminate this, we are introducing the ability to create plans, measure groups, measures and critical measure properties via an
+excel upload. To enhance this functionality we are also introducing the ability to create and update granularity of measure groups.
+```
+### Create and Update Granularity with Excel Upload
+
+1. Login to a tenant with the relevant credentials.
+2. Go to the **Designer** workspace.
+3. Click the **Mass Config** button on the upper-right of the screen.
+4. Click **Models** in the **Create a new config template** area.
+5. Click **MeasureGroups** on the next page.
+6. Select the relevant filters in the **Filter by Measure Groups** area.
+7. Select Measure Group/Measure General in the **Select config to load** area.
+
+```
+The Show Config button is disabled by default.
+```
+8. Click **Download Excel Template**. An excel template is downloaded.
+
+```
+The excel file downloaded will have separate sheets for Measures and Measure Groups.
+```
+### Create & Update Granularity
+
+
+```
+The sheet corresponding to measure groups will include the Granularity definitions.
+The column named DimensionSortOrder manages the granularity sort order. The configurators can specify different dimensions that are part of the grain.
+The columns succeeding the DimensionSortOrder column, each represent a dimension that contributes to the granularity of the measure groups populated in the
+sheet.
+For each row, the appropriate attributes of the respective dimension can be specified.
+The MeasureGroups sheet can be used to create new Plans and Measures Groups and update the properties of existing Plans and Measure Groups.
+Rename and delete of entities are not possible using this template. However, you can update the properties of the existing entities and create new ones.
+In the DimensionSortOrder column if no order is specified, the order will follow the sequence of the columns.
+```
+9. Click **Upload** once the template has been filled out.
+
+After the upload is complete, the **Upload Summary** pop-up window is displayed indicating the failed or ignored records.
+
+In addition, the notification is displayed in the global **Notifications** area.
+
+
+10. Click **View More**. The mass config excel upload job in the **My Jobs** area is displayed.
+11. Click the link in the **Status** column to view the error obtained from the GraphCube.
+12. Click the link in the **Bad Record** column to download the excel file uploaded with two additional columns.
+
+```
+The File Name column displays the name of the file.
+The Bad Record column displays the status of the file.
+The Bad Record Reason column displays the error message.
+The Result column displays the summary of the upload.
+```
+13. Resolve the errors.
+14. Re-upload the file for successful creation or updation of entities.
+
+
+```
+You can create and update named nodes as well as include named nodes in the granularity of a measure group in bulk, using the excel sheet upload in mass config.
+```
+```
+This functionality was required because as a configurator, if you need to add plans, measure groups, and measures in bulk, you need to run DDLs
+in the Deployment workspace to achieve this. Maintaining and running DDLs is a time consuming and error prone process. Hence, to eliminate this,
+the ability to create plans, measure groups, measures and critical measure properties via an excel upload has been introduced.
+```
+```
+Prerequisites
+```
+```
+Appropriate user roles and permissions is required to access the Designer workspace and to edit the entities.
+```
+```
+User Workflow
+```
+```
+Any User > Designer > Mass Config > Models > Measure Groups > Measure Groups/Measure General
+```
+1. Login to a tenant with the relevant credentials.
+2. Go to the **Designer** workspace.
+3. Click the **Mass Config** button on the upper-right.
+4. Click **Models** in the **Create a new config template** area.
+5. Click **Measure Groups** in the next page.
+6. Select the relevant filters in the **Filter by Measure Groups** area.
+7. Select Measure Group/Measure General in the **Select config to load** area.
+
+```
+The Show Config button is disabled by default.
+```
+8. Click **Download Excel Template**. An excel template is downloaded. The excel template downloaded will have separate sheets for Measures and MeasureGroups.
+
+### Create & Update Named Node via Excel Template
+
+
+```
+The Named Nodes sheet displays the named node definitions.
+```
+```
+The Sequence column manages the sort order of dimensions involved in the named node.
+The columns succeeding the Sequence column, each represent a dimension that contributes to the named node if an attribute is mentioned against it.
+For each row, the appropriate attributes of the respective dimension can be specified.
+```
+9. Click **Upload** after the template has been filled out. The file is uploaded.
+
+```
+In case of any errors, refer to previous section on how to download the excel sheet template with the status column populated with appropriate
+error messages, so that it can be corrected and re-uploaded
+```
+```
+The Named Node sheet can be used to create new named nodes and update existing named nodes.
+You cannot rename and delete entities using this template. However, you can update properties of the existing entities and create new ones.
+In the Sequence column if no order is specified, the order will follow the sequence of the columns.
+```
+```
+Design Considerations
+```
+```
+The user can download the excel template from a configured tenant with data and set up and upload in another tenant to create and transfer all Plans, Measure Groups,
+Measures and Named nodes (including in granularity of measure groups).
+```
+```
+Known Limitations
+```
+```
+You cannot delete named nodes using this excel template. The user action is limited to just creating and updating.
+```
+```
+Time and again, the configurators have to change the grain of the measure based on several business requirements. Simultaneously, the change must replicate in the existing
+rules of the Platform too. Hence, the Rules template is introduced so that it can be used to mass edit the scopes and the formulas of rules.
+```
+```
+The Rules template is used to find and replace the entities (Attributes, Namedsets, Measures) in active rules and procedures en masse.
+```
+1. Go to the **Designer** workspace.
+
+## Rules Template
+
+
+2. Click **Mass Config**.
+3. Click **Rules**. The **Rules** template is displayed.
+4. Go to the **1. Select rule files to operate on:** area.
+5. Select a set of active rules and procedures in the **Rule files** list on which you can work.
+6. Click **OK**.
+7. Go to the **2. Narrow down rules to operate on:** area.
+
+
+8. Select the relevant additional filters to narrow down the active rules/procedures. All the selected rule files are displayed.
+
+```
+The selected rule files are displayed in the read-only mode.
+```
+9. Click the **Find and Replace** action button to bulk edit.
+Example: When you need to change the scope of active rule from CWVAndScenarios to CWV.
+
+Users can select active rules/procedures:
+
+
+```
+Active rules can be operated on both Expressions and Entities.
+Procedures can be operated only on Expressions.
+```
+Users can primarily operate on:
+
+1. **Expressions** : Select the relevant fields on which you can work to find and replace.
+2. **Entities** : Displays a list of all entities (Attributes/Namedsets/Measures) that exists in the tenant/Platform.
+
+
+```
+Time and again, the configurators have to change the grain of the measure based on several business requirements, that's when the Measure Group template can be used to
+mass edit grain of the measures.
+```
+```
+The Measure Group template is used to find and replace the granularity in the Measure Groups en masse.
+```
+1. Go to the **Designer** workspace.
+2. Click **Mass Config**.
+
+## Measure Group Granularity
+
+
+3. Click **Measure Group**. The **Measure Groups** template is displayed.
+4. Go to the **1. Select measure groups to operate on:** area.
+5. Select a set of measure groups in the **Measure Groups** list on which you can work.
+6. Click **OK**.
+7. Go to the **2. Narrow down measure groups to operate on:** area.
+
+
+8. Select the relevant additional filters to narrow down the measure groups.
+9. Click **Show Config**. A grid is displayed with a set of columns and rows indicating granularity (grain dimensions) and measure groups on columns
+and rows, respectively.
+
+```
+The value for an intersected cell would be an attribute of the dimension on the column.
+```
+```
+The interactions (creating, deleting, updating) on the grid are not supported for this release.
+```
+**Find and Replace (Action Button)**
+Using this action button, you can find and replace the attributes in the measure groups.
+You can primarily find and replace:
+
+```
+One attribute with another
+Combination of attributes
+```
+When you replace a set of attributes, any extra attributes in the Replace with field are added to the last in the granularity.
+
+
+**Partition**
+When partition is present for a measure group, then you need to repartition. A warning message is displayed that you need to repartition before
+changing the granularity.
+
+**Measure Group Data**
+If the data is present for Measure Groups and you try to change the granularity, a warning message is displayed that data will be lost.
+
+
+**Limitation**
+The maximum measure groups allowed at a time is 10.
+
+In this enhancement, the configurators will have the ability to add/remove grain(s) from the measure groups using Mass Config unlike before where
+they had to search for the measure group and then had to do this manually. This also reduces the number of clicks that were used earlier to perform
+this task. **Functionality Description
+Add (Action Button)**
+The configurators can add grain(s) to the measure groups using this action button.
+
+### Add/Remove Grain(s) from Measure Group
+
+
+When grain(s) are added to the Measure Group, it gets added to the end.
+
+**Remove (Action Button)**
+The configurators can remove grain(s) from the measure groups using this action button.
+
+
+```
+Previously, if a configurator wanted to add or remove the From/To node(s) from a graph, they would have to search for the graph and then manually add or remove the node
+based on the business requirements. This results in multiple clicks to navigate and make the required changes.
+```
+```
+In the current enhancement, the configurators will have the ability to add or remove the node(s) to Graphs using the Mass Config feature.
+```
+1. Go to the **Designer** workspace.
+2. Click **Mass Config**.
+3. Click **Graphs** in the **Create a new config template** area.
+
+## Graph Template
+
+
+4. Select the required graphs and additional filtering options to narrow down the graphs.
+5. Click **Show Config**. The grid with Graphs and From/To node(s) associated with them are displayed.
+
+The configurators can add the From/To node(s) to the graphs using this functionality.
+
+### Add Node
+
+
+When a node is added to the From/To Nodes of a graph, it gets added to the end.
+
+The configurators can remove the From/To Node(s) from the graphs using this functionality.
+
+### Remove Node
+
+
+```
+If a configurator wanted to add/remove translations or roles for an action button, they would have to search for the action button and then individually update the translations or
+roles. This requires multiple clicks to navigate and make changes.
+```
+```
+Here is the config for action buttons using mass config for roles.
+```
+1. Go to the **Designer** workspace.
+2. Click the **Mass Config** button.
+
+```
+The Create a new config template area is displayed on the left.
+```
+## Mass Config for Action Button - Roles & Translations
+
+### Mass Config for Roles of Action Buttons
+
+
+3. Click **Action Button**. The **Action Button** area is displayed.
+4. Select relevant options in the **Filter for action buttons to work with** area. All options are selected by default.
+
+
+5. Click **Roles** in the **Select config to show** area.
+6. Add additional roles to be shown if relevant.
+7. Click **Show Config**.
+
+**Grid**
+
+```
+All roles that are associated with the filtered action buttons are displayed in columns.
+If the role is assigned to an action button then the value of the cell is True.
+If the role is not assigned to an action button then the value of the cell is False.
+Modify the relevant values of the cells in the grid.
+```
+```
+Click the Save changes button. The changes are displayed in the roles for the Action Button in the designer View.
+```
+
+Here is the config for translations using mass config for Action Buttons.
+
+1. Go to the **Designer** workspace.
+2. Click the **Mass Config** button.
+
+The **Create a new config template** area is displayed on the left.
+
+### Mass Config for Translations of Action Buttons
+
+
+3. Click **Action Button**. The **Action Button** area is displayed.
+4. Select relevant options in the **Filter for action buttons to work with** area.
+5. Click **Translations** in the **Select config to show** area.
+6. Click **Show Config**.
+
+**Grid**
+
+```
+All translations that are associated with the filtered action buttons are displayed in columns.
+All the filtered action buttons are displayed in the rows.
+All the languages that the o9 Platform supports are hidden in the grid.
+You can select the checkbox next to the relevant languages to enable the hidden languages in the grid.
+```
+
+Double-click the cells.
+Add the relevant translations.
+
+Click the **Save changes** button.
+The translations are displayed in the Designer View as well.
+
+
+```
+There have been cases where certain user actions make model entities invalid. This is later difficult to track and debug. This feature will enable the configurators to see where a
+report, rules, etc. got invalidated and the reason behind it. Eventually, it is helping them to get invalid entities at one place instead of opening each entity and looking at what the
+issue is.
+```
+1. Go to the **Designer** workspace.
+2. Click **Config Exceptions**.
+
+```
+The Report - Interface Measure Exception is opened by default.
+```
+```
+You can view this report, or you can opt to check other reports that are displayed in the same menu. You can download the reports in the Excel
+format, if you click the Export as Excel icon ( ) on the upper-right.
+```
+## Config Exception Reports
+
+
+```
+We have added a new type of exception report that flags all the plugins that didn't get compiled during tenant start up.
+```
+```
+This is required to provide visibility to the users to know which plugins can display exceptions when called from an action button or the Debugging
+workspace. Before this, users didn't know why certain plugins displayed the not found in LS model error while it is visible in the Designer workspace.
+With this report, users can:
+```
+```
+Get the list of erroneous plugins.
+Check what is the error for each of these plugins.
+Export the report into the excel format.
+```
+```
+This will subsequently help users in fixing those errors.
+```
+```
+Prerequisites & Setup
+Prerequisites
+```
+```
+To get accurate results, ensure that the tenant start up is performed post backup restore/ solution load / package import.
+```
+```
+Setup
+```
+```
+A loaded config is required that has plugins.
+```
+```
+User Workflow
+```
+```
+Configurators > Designer > Config Exception Report > Invalid Plugins
+```
+1. Go to the **Designer** workspace.
+2. Click **Invalid Plugins**. The **Invalid Plugins** page is displayed with the results.
+
+```
+In case, there are no such plugins, it will be displayed as the following image.
+```
+### Plugins Exception Report
+
+
+```
+Design Considerations
+```
+```
+It basically populates the erroneous plugins that failed to get compiled by GraphCube during the tenant start up.
+```
+```
+Known Limitations
+```
+```
+The scope is limited to GraphCube compilation errors i.e., the Python/R related errors will not be displayed in the list.
+```
+This category contains only the following page.
+
+```
+Platform Wiki - Table of Contents
+```
+Retrieved from ‘https://platformwiki.o9solutions.com/index.php?title=Category:Designer_Mass_Configuration&oldid=37212’
+
+**This page was last modified on 24 July 2025, at 09:41.**
+
+## Pages in category ‘Designer Mass Configuration’
+
+### P
+
+

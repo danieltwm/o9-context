@@ -1,0 +1,139 @@
+# Category:Report Designer
+
+```
+Report Designer - Overview
+Toggle Mode
+Grid Personalization
+```
+```
+The Designer workspace enables to build and maintain the tenant data model, the HTML UI configuration and the Excel
+UI configuration.
+```
+```
+A user with the admin user role can create tenant data model, such as dimensions, attributes,
+hierarchies, measures, and computation rules. It also allows to configure the UI reports, such as pivot,
+line chart, etc.
+By default, the Designer workspace displays the Report Designer area.
+```
+```
+Note
+```
+```
+The Designer workspace also allows you to click Edit Model and go to the Model Designer area.
+You cannot modify the model while working in the Report Designer because it displays the tenant model in
+the read-only mode.
+```
+```
+The users with the Admin user role (System Architect and UI Designer user roles) can configure
+atomic widgets or reports from the Report Designer in Designer workspace as shown in the image
+below. These reports can be used to configure UI Views. o9 supports various types of reports. You
+need to click the relevant report type to configure it.
+```
+## Contents
+
+## Report Designer - Overview
+
+
+```
+Designer Landing Page
+```
+```
+Note
+```
+```
+There is a behaviour change in the designer’s inline search box. A user needs to Press Enter to do a search.
+For more information on change in search behaviour, click here (https://docs.google.com/document/d/1oheXOE
+djI4dAktDqLx_BLLVBAFxDm3q6LNRqXKf0KjA/edit?ts=5d8c88e2&pli=1#).
+```
+These reports are self-sufficient, which don't need any external information to display planning data.
+They can be used in the HTML or the Excel UI to configure a View or can be seen from the Report
+workspace for quick data analysis. Views can display multiple atomic widgets in various visually
+appealing layouts as discussed in the coming sections. Users with the Admin user role or business
+users with the UI Designer/System Architects user role can access and configure different kinds of
+widgets. Users with the UI - Designer Private role can only configure private reports and cannot share
+with the general audience. They can click the relevant report type to configure it as shown in the
+image above.
+
+In Designer, two distinct modes exist for editing Model and Reports. In order to perform any action,
+users need to ensure that they are working in the correct edit mode. The user workflow is improved as
+the selection is made automatic. Users no longer need to toggle the edit modes, explicitly.
+The Edit Reports and Edit Model buttons in the Designer are no longer visible because the Toggle
+Mode is introduced.
+On the Designer load, both the models area and reports area are displayed. Users can navigate
+through the tabs to any entity that they need to view or edit.
+
+```
+Note If you click an entity, it is displayed in the Edit mode by default.
+All the secondary actions are available just as before.
+```
+If you click a measure, the measure edit area is displayed (as shown in the image below). Here, you
+can edit the measure config, and other primary or secondary actions can be performed just as before.
+
+## Toggle Mode
+
+
+```
+Measure Edit Area
+```
+```
+Report
+```
+```
+Note If you close the measure, it takes you to the original starting point (as shown in the Image: Page ). Designer Landing
+```
+If you click a report, it is displayed as the image shown below. If you click **( )** , the entity’s config is
+
+displayed as a pop-up window.
+
+```
+Note The actions to drag and drop entities to the reports area and the other secondary actions are available just asbefore.
+```
+
+```
+The atomic widgets can be configured in different ways for different people in the organization depending on their org
+hierarchy. Grid personalization provides the ability to use the same underlying atomic widget but it makes changes to the
+layouts, filters, etc. and save it as a favorite.
+```
+```
+Favorites are View-specific (instead of Filter-specific). The pivot layout changes are saved with the
+favorite (instead of using the browser cache). This means that the user can see his layout changes on
+multiple machines, instead of just one. For linked pivots, the linked row is being remembered with the
+favorite (instead of simply automatically linking using the first row). As an example, the pivot filter
+search text is being remembered with the favorite (instead of being discarded when the on-grid filter is
+closed).
+```
+1. Click the relevant option in the Filters list on a specific View and modify the layout.
+2. Click **( )** to add the current selection as a Favorite.
+3. Type the name and description for this filter.
+4. Click **Add**. The details are added to Favorite and now available in the relevant View.
+
+## Grid Personalization
+
+
+5. Click **Layout** on a specific View. The **Layout** dialog box is displayed.
+6. Select and clear the relevant options.
+7. Click **Save**. A customized layout is displayed.
+
+```
+Note
+```
+```
+A user can again add this layout as a Favorite so that next time this is available in the relevant View.
+When a user links a Pivot report to any other widget, the same filters are passed to the secondary widget
+and is saved as a favorite.
+```
+This category contains only the following page.
+
+```
+Platform Wiki - Table of Contents
+```
+## Pages in category ‘Report Designer’
+
+### P
+
+
+Retrieved from ‘https://platformwiki.o9solutions.com/index.php?title=Category:Report_Designer&oldid=34813’
+
+**This page was last modified on 12 December 2024, at 10:28.**
+
+

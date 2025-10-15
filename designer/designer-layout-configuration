@@ -1,0 +1,787 @@
+# Category:Layout Configuration
+
+```
+Layout Configuration - Overview
+Manage Workspace
+Add New Workspace
+Modify a Workspace
+Add Action Button to a Workspace
+Manage Page
+Add New Page
+Modify a Page/Page Group
+Copy a Page
+Rearrange Page Layout
+Add KPI to a Page
+Add Action Button to a Page
+Manage View
+Add New View
+Modify a View
+Copy a View
+Hide a View
+Add Reports to Blocks/Widget Containers of the View
+Add Action Button to a View
+Action Button Overflow Management
+Remove Report Container from a View
+Enable & Disable Expand Option for Widget Container
+Types of View
+Reporting or Dashboard View
+Anchored Line Chart and Grid View with KPI Tower
+Anchored Widget
+Non-Anchored Widget
+Boolean Measure Navigation
+Composite Widgets
+Manual Trigger of Data Load on Reports
+```
+```
+The o9 Platform allows users to configure UI in the inline mode and also allow to design the UI layout and view the changes simultaneously. Users can use the preconfigured
+reports to configure the UI and define interactions as explained below.
+```
+```
+This feature is available to the following user roles:
+Admin
+System Architect
+UI Designer - Public
+```
+```
+Note For more information on the UI layout configuration, see the presentation and videos M) here (https://drive.google.com/drive/folders/0B6ON6vnnLR6RQjNxRkdIYnhmM
+```
+```
+It enables you to configure the UI in the online mode and see the changes in real time.
+```
+```
+This feature is available to the following user roles:
+System Architect
+UI Designer - Public
+```
+1. Click the Design Layout icon **( )** on the upper-right of the platform header. The Design Layout page is displayed.
+
+## Contents
+
+## Layout Configuration - Overview
+
+## Manage Workspace
+
+### Add New Workspace
+
+
+2. Click the Workspace icon **( )** on the upper-left of the workspace header. The workspace panel is displayed on the left.
+
+```
+Note To rearrange workspaces, click the Rearrange Workspaces icon ( ).
+```
+3. Click the Add workspace icon **( )**. The **Add workspace** dialog box is displayed.
+4. Enter the relevant details. For more information, see **Add New Workspace—Field Description**.
+5. Click the Save icon **( )**. The details are saved and a placeholder for the page and the View is created.
+
+
+```
+Note
+```
+```
+The UI is displayed in the Design mode.
+To see the newly created workspace, click the Design Layout ( ).
+The new workspace created is visible to you only if you are assigned the same user roles which are added for this workspace.
+```
+1. Click the Design Layout icon **( )**.
+2. Click **( )** next to the relevant workspace name. The options are displayed.
+
+### Modify a Workspace
+
+
+3. Click **Edit**. The **Edit** dialog box is displayed.
+4. Modify the relevant details.
+5. Click the Save icon **( )**. The workspace details are modified.
+
+
+```
+Note
+```
+```
+To copy this workspace as a new workspace, click Copy in the Icon list.
+To display this workspace on the o9 Platform mobile app, select the IsMobile checkbox.
+To rearrange workspaces, click the Rearrange Workspaces icon ( ).
+```
+1. Click the Design Layout icon **( )**.
+2. Click **( )** next to the relevant workspace name. The options are displayed.
+
+### Add Action Button to a Workspace
+
+
+3. Click **Set action buttons**. The **Edit** dialog box is displayed.
+4. Click **( )** next to **Action button bindings**. The **ActionButtonName** list is displayed.
+
+
+5. Select the relevant option from the **ActionButtonName** list.
+6. Click the Save icon **( )**. The details are saved.
+
+```
+You can add a new page or modify the name of an existing page and use it, if required.
+```
+1. Click the Design Layout icon **( )** on the upper-right of the platform header. The Design Layout page is displayed.
+
+## Manage Page
+
+### Add New Page
+
+
+2. Click **( )**. The **Add page** dialog box is displayed.
+
+
+All the roles which are selected during workSpace creation are visible here. Planners can restrict access at the page level by removing from the
+listed Roles. Views on the page is updated accordingly with the Roles.
+Example: During Workspace creation, if the planner has selected Role A, Role B, Role C. During Add/Update Page planner wants to restrict the
+page access to only Role A and Role B then this can be achieved using this.
+
+3. Enter the relevant details. For more information on this, see **Add New Page—Field Description**.
+4. Click the Save icon **( )**. The page is added
+1. Click the Design Layout icon **( )**.
+2. Click **( )** next to a page/page group. The options are displayed.
+3. Click **Edit**. The Edit dialog box is displayed.
+
+### Modify a Page/Page Group
+
+
+All the roles which are selected during workSpace creation are visible here. Planners can restrict access at the page level by removing from the
+listed Roles. Views on the page is updated accordingly with the Roles.
+Example: During Workspace creation, if the planner has selected Role A, Role B, Role C. During Add/Update Page planner wants to restrict the
+page access to only Role A and Role B then this can be achieved using this.
+
+4. Modify the relevant details.
+5. Click the Save icon **( )**. The page details are modified.
+
+```
+Note The pages can show KPI tiles but use the pre-configured KPI widget.
+```
+1. Click **( )** next to a page. The options are displayed.
+2. Click **Copy**. The Copy dialog box is displayed.
+
+### Copy a Page
+
+
+3. Modify the relevant details.
+4. Click the Save icon **( )**. The page details are copied.
+1. Click the Rearrange Pages icon **( )**.
+
+The **Rearrange Page Layout** dialog box is displayed.
+
+### Rearrange Page Layout
+
+
+```
+Note To rearrange the page group, click PageGroup in the Sort at level list.
+To rearrange the page, click Page in the Sort at level list.
+```
+3. Select the relevant option in the **Sort at level** list.
+
+
+4. Drag and drop the relevant page group/page in the preferred order.
+5. Click the Save icon **( )**. The changes are saved.
+1. Click **( )** next to a page. The options are displayed.
+2. Click **Add KPI**. The **Add KPI Reports** area is displayed on the left.
+3. Use the drag-and-drop operation to move the KPI reports from the **Add KPI Reports** area to the Page area. This KPI tile is displayed in the Page
+area.
+
+In the Design layout, you will see the **Link Filter** option in the KPI of the Page Navigation. The **Filters Scope Setting** dialog box is displayed, where
+all the common Level Attributes of KPI report in the page navigation and View are displayed. Those level attribute filters can be bound to the
+workspace level.
+
+### Add KPI to a Page
+
+
+For example: If Fiscal Month is bound to the workspace level, then any changes done in the Fiscal Month Level Attribute in View is applied to the
+KPI tile as well.
+
+1. Click the Design Layout icon **( )**.
+2. Click **( )** next to the relevant page name. The options are displayed.
+
+### Add Action Button to a Page
+
+
+3. Click **Set action buttons**. The **Edit** dialog box is displayed.
+4. Click **( )** next to **Action button bindings**. The **ActionButtonName** list is displayed.
+
+
+5. Select the relevant option from the **ActionButtonName** list.
+6. Click the Save icon **( )**. The details are saved.
+
+```
+You can add a new View or modify the name of an existing View and use it, if required.
+```
+1. Click the Add View icon **( )**. The **Add View** dialog box is displayed.
+
+## Manage View
+
+### Add New View
+
+
+2. Enter the relevant details. For more information on this, see **Add New View—Field Description**.
+3. Click the Save icon **( )**. The details are saved.
+1. Click the Design Layout icon **( )**.
+
+### Modify a View
+
+
+2. Hover over the relevant View and click **( )**. The options are displayed.
+3. Click **Edit**. The Edit dialog box is displayed.
+4. Modify the relevant details.
+5. Click the Save icon **( )**. The View details are modified.
+
+
+```
+Note You cannot convert any anchored report to a non-anchored report and vise versa.
+```
+1. Click the Design Layout icon **( )**.
+2. Hover over the relevant View and click **( )**. The options are displayed.
+
+### Copy a View
+
+
+3. Click **Copy**. The Copy dialog box is displayed.
+4. Modify the relevant details.
+5. Click the Save icon **( )**. The View details are copied.
+
+You can hide a View in the workspace if you select the Hidden checkbox in the View configuration while adding or modifying a View. A View allows
+users to analyze data at the summary as well as the detailed level. Sometimes, the detailed level planning data is huge which makes the application
+slow. So to avoid this problem, you can hide the View and add it to the Navigation Links.
+
+1. Go to the Design mode.
+2. Hover over the name of the relevant View.
+3. Click the show view action icon **( )** next to the relevant View.
+
+### Hide a View
+
+
+4. Select the **Hidden** checkbox. Here in this example, _View3_ is hidden.
+After you hide a View, it is not visible when you visit that relevant workspace. In this example, View3 is not visible.
+5. Go to the Design mode if you want to view the hidden View. In this example, if you want to see _View3_ , then go to the Design mode.
+
+```
+Note The hidden Views are displayed in the navigation links and NLP search. So the View is visible when you navigate through these.
+You cannot add favourites to the hidden Views.
+```
+1. Click the Open Reports list icon **( )** on the right of the View. The **Reports** pane is displayed on the left with the list of pre-configured reports.
+
+### Add Reports to Blocks/Widget Containers of the View
+
+
+2. Drag the relevant report/atomic widget from the **Reports** pane and drop it to the relevant block/widget container of the View. The report is added
+to the View.
+
+```
+Note
+```
+```
+The added blocks/containers are displayed as tabs in the UI.
+You can drag a single or multiple reports from the Reports pane and drop it in the relevant block/container of the View.
+To adjust the height of the blocks/containers, click Set blocks height ( ) (see the image below).
+```
+1. Click the Design Layout icon **( )**.
+2. Click **( )** next to the relevant View name. The options are displayed.
+
+### Add Action Button to a View
+
+
+3. Click **Set action buttons**. The **Edit** dialog box is displayed.
+4. Click **( )** next to **Action button bindings**. The **ActionButtonName** list is displayed.
+
+
+5. Select the relevant option from the **ActionButtonName** list.
+6. Click the Save icon **( )**. The details are saved.
+
+This consolidates the action buttons into a dropdown list when necessary, making the report more organized and space-efficient.
+
+1. Navigate to a report where a large number of action buttons are added. In this example, the _Parts List_ report is considered.
+A series of action buttons are displayed on the UI.
+2. Click the ellipsis icon to view the remaining action buttons in the dropdown list.
+
+**Action Button Overflow Management**
+
+
+This feature is also compatible when the container is collapsed or when the browser zoom level is changed.
+
+```
+This feature is compatible with:
+```
+```
+Pivot
+Master data
+Indented grid reports
+```
+You can remove a report container as per the block selection.
+
+1. Click **( )**.
+
+### Remove Report Container from a View
+
+
+2. Click **Remove**. The container is removed from the View.
+
+**Difference Between Removing Report from Container & Removing Container from View**
+When you remove a report from a container, you can add another report to it, but
+When you remove a container from a View, then you need to update the View layout using the Block option to add the container back.
+
+You can drop multiple reports to a single View container and it will be displayed in a tabbed format as shown below.
+
+**Change the Block Height to a Control View Layout**
+
+1. Go to the Design layout.
+2. Click the Set Blocks Height icon **( )**. The **Set Rows height** dialog box is displayed.
+
+
+3. Select the relevant height of the row in the **First Row** list.
+4. Click the Save icon **( )**.
+5. Click the Save Block Structure icon **( )**. The changes are saved.
+
+```
+This feature is available to the end users.
+```
+In the o9 platform, currently the widget containers have an option to expand to the full View. But sometimes when a KPI or a similar widget that
+takes a smaller space is added to a container and expanded, the expanded View has a lot of white space which is not useful and gets in the way of
+other widgets. In such cases, the user requires the expand button to be disabled.
+
+This runtime feature provides the option to enable or disable the expand button for the widget container.
+
+1. Login to any tenant with the relevant credentials.
+2. Navigate to a View (in this example the View is Dashboard).
+3. Go to the Design layout mode.
+4. Click the ellipsis icon **( )** on the upper-right of the container. The option **Disable Expand** is displayed.
+
+### Enable & Disable Expand Option for Widget Container
+
+
+5. Click **Disable Expand**. The Expand report icon **( )** on that container is removed at runtime but is still available for other containers.
+
+For a container which already has the **Disable Expand** option disabled, the list will display the **Enable Expand** option.
+
+
+```
+The dashboard View is more suitable for reporting and displays high level reports and KPIs.
+```
+```
+Configuration
+```
+1. Click the Add View icon **( )**. The **Add View** dialog box is displayed.
+2. Enter the relevant details. For more information on this, click **Add New View—Field Description**.
+3. Click to clear the **Has Anchored Report** checkbox.
+4. Click the required number of blocks or widget containers. A View with the selected blocks or widget containers is created.
+In the image below, 2 blocks is selected for the first row and 3 blocks is selected for the second row.
+
+### Types of View
+
+```
+Reporting or Dashboard View
+```
+
+```
+Note To adjust the height of the blocks/containers, click Set blocks height (^ )
+```
+5. Click the Open Reports list icon **( )** on the right of the View. The **Reports** pane is displayed on the left with the list of preconfigured reports.
+6. Type the name of the relevant widget in the **Search reports** field or click the list which is on the left of the **Search Reports** field.
+
+
+7. Drag the relevant report/atomic widget from the **Reports** pane and drop it to the relevant block/container of the View. The report is added to the
+View.
+
+```
+Note You can drag a single or multiple reports from the Reports pane and drop it in the relevant block/container of the View.
+The added blocks/containers are displayed as tabs in the UI.
+```
+**Modify Other Details**
+You can click **( )** on the upper-right of the report name in case you need to update the following information.
+
+
+```
+i. Rename : This option allows you to change the name of the report.
+ii. Edit-<Report Name> : This option allows you to modify the configuration of the report from the View in the Design mode and you do not have to go to the Designer workspace
+to update the source report. In this example, the name of the report is Edit-Bubble Chart.
+```
+iii. **Promote Report filters** : This option allows you to update the filters for the selected report.
+
+```
+Note Since the layout in the image above does not have any anchored widget, each widget can have different filters.
+```
+```
+As displayed in the image above, the bubble chart report filters can be promoted at three levels:
+```
+```
+a. Self : The Self level is selected by default. The filters with the Self level is only applicable for the source report. They will be visible and applicable only when the report is
+selected and not shared with other reports on the View.
+In the Dashboard, all report filters are applicable to Self. When the network report is selected, the filters are taken from the network report configuration.
+```
+
+When the bubble chart is selected, the filter changes to bubble chart report filters and filter sharing does not take place.
+
+Similarly, other reports have filters which are applicable to Self.
+
+
+b. **None** : Filters with the None option are not applicable for the report. They are not visible on the UI. Select None in the Category list and it will not be visible on the UI.
+
+c. **View** : If a filter is promoted to the View then it will be applicable for this View. It will be visible for all the reports of this View. For example, if the Time filter is selected and
+promoted to the View then all the reports will display data for the selected time such as FY2017. In this example, the Fiscal Month filter is promoted to the View level.
+
+
+```
+This filter will be applicable to all the reports in the View as shown in the images below.
+```
+```
+iv. Set info & collab : This option allows you to select the checkbox and display the relevant member info, pulse, and task.
+v. Remove : This option allows you to delete the report.
+```
+8. Save the View layout changes.
+9. Click the Design layout icon **( )** to exit the View Designer mode.
+1. Click the Add View icon **( )**. The **Add View** dialog box is displayed.
+
+**Anchored Line Chart and Grid View with KPI Tower**
+
+
+2. Enter the relevant details. For more information on this, click **Add New View—Field Description**.
+3. Select the **Has Anchored Report** checkbox.
+4. Select the **admin** and **CxO** user role in the **Roles** field.
+5. Click the required number of blocks or widget containers. A View with the selected blocks or widget containers is created.
+In the image below, 1 block is selected for the first row and 2 blocks are selected for the second row.
+6. Click the Open Reports list icon **( )** on the right of the View. The **Reports** pane is displayed on the left with the list of preconfigured reports.
+
+
+7. Type the name of the relevant widget in the **Search reports** field or click the list which is on the left of the **Search Reports** field.
+8. Drag the relevant report/atomic widget from the **Reports** pane and drop it to the relevant block/container of the View. The report is added to the
+View.
+
+
+The anchor widget icon **( )** is displayed before the line chart report name, which means that this line chart is an anchored widget.
+
+In this View layout, anchored and other widgets behave differently as explained below.
+
+You can click **( )** next to the line chart. The options are displayed.
+
+```
+i. Edit Title : This option allows you to modify the name of the line chart report.
+ii. Edit-<Report Name> : This option allows you to modify the configuration of the line chart report from the View in the Design mode and updates the source report
+configuration.
+iii. Share Filters : This option allows you to promote anchored widget filters at the View, the page or the workspace level.
+```
+```
+Note
+```
+```
+The Version filters are generally promoted to the workspace level so that users don’t need to select version or scenario again within a workspace.
+The Product filters are shared at the View level.
+Users can select the Global or the None option as required.
+```
+```
+In this example, the Fiscal Month filter is shared at the page level for the month of M02-2012. This is a member filter expression for M02-2012:
+[Time].[Fiscal Month].Filter( #.Name In { "M02-2012" } )
+```
+**Anchored Widget**
+
+
+iv. **Set navigation links** : This option allows you to add pre-configured navigation paths. It also enables you to quickly navigate to the detailed Views, and carry the context of the
+members selected from the source View.
+You can click **Add navigation links** and make the relevant changes in the Add Navigation links area.
+
+```
+There are three types of navigation links:
+```
+```
+a. Navigation Links
+b. Member Navigation Links
+c. Data Navigation Links
+```
+```
+Note For more information on the types of navigation links, click Navigation Link Types.
+```
+```
+v. Set action buttons : This option allows you to add action buttons to a report.
+```
+
+1. Click **Set action buttons**. The Set action buttons dialog box is displayed.
+2. Select a preconfigured action button from the **ActionButttonName** list.
+3. Select a relevant option for a shortcut in the **Hot Key** list.
+
+```
+Note You can then enable this action button using Alt + Shift + <selected shortcut>.
+```
+4. Click the Save icon **( )**. This action button is displayed on the report.
+
+vi. **Set info & collab** : This option allows you to display the relevant member information.
+
+
+```
+You can select the Show Member Info checkbox to display the details of the members in the grid report.
+You can select the Show posts checkbox and provide a title to display the collab post. Select the Collab folder from the Pulse Folders.
+Select the Show tasks checkbox and save the changes. The member information is displayed for the members of this report.
+To view the information, you can click any member or go to the Actions column.
+The Actions column is displayed only for the following cases:
+```
+```
+Case 1' : When you select the Show posts checkbox or Show tasks checkbox.
+```
+```
+Case 2 : When you select the Show Member Info checkbox (the grid has more than one row field and level attribute).
+```
+```
+Case 3 : When the grid linking is done. o9 supports various widget bindings, such as Grid-Grid, Graph-Grid.
+For more information on these widget bindings, see section b in the Link Filters (Widget Bindings).
+```
+```
+vii. Set Translations : This option allows you to add translations. You can click Set Translations and make the relevant changes in the Set Translations dialog box. You need to
+click the relevant language in the Select Language list and type the relevant translation in the Title field.
+```
+viii. **History** : This option allows you to view the history of the widget.
+ix. **Remove** : This option allows you to delete the widget from this container.
+
+```
+In this View, two grids are added as Non-Anchored reports.
+You can click ( ) next to the grid. The options are displayed.
+```
+```
+i. Edit Title : This option allows you to modify the name of the report.
+```
+```
+Non-Anchored Widget
+```
+
+ii. **Edit-<Report Name>** : This option allows you to modify the configuration of the report from the View in the Design mode.
+iii. **Share Filters** : This option allows you to promote anchored widget filters at the View, the page or the workspace level.
+
+```
+Note
+```
+```
+The Version filters are generally promoted to the workspace level so that users don’t need to select version or scenario again within a workspace.
+The Product filters are shared at the View level.
+Users can select the Global or the None option as required.
+```
+```
+Note The Set as Primary widget option allows you to turn a non-anchored widget to an anchored widget.
+For more information on Link filters, click Link Filters (Widget Bindings).
+```
+iv. **Set navigation links** : This option allows you to add pre-configured navigation paths. It also enables you to quickly navigate to the detailed Views, and carry the context of the
+members selected from the source View.
+You can click **Add navigation links** and make the relevant changes in the Add Navigation links area.
+
+```
+There are three types of navigation links:
+```
+```
+a. Navigation Links
+b. Member Navigation Links
+c. Data Navigation Links
+```
+```
+Note For more information on the types of navigation links, click Navigation Link Types.
+```
+```
+v. Set action buttons : This option allows you to add action buttons to a report.
+```
+1. Click **Set action buttons**. The Set action buttons dialog box is displayed.
+2. Select a preconfigured action button from the **ActionButttonName** list.
+3. Select a relevant option for a shortcut in the **Hot Key** list.
+
+```
+Note You can then enable this action button using Alt + Shift + <selected shortcut>.
+```
+4. Click the Save icon **( )**. This action button is displayed on the report.
+
+
+```
+vi. Set info & collab : This option allows you to display the relevant member information.
+```
+```
+You can select the Show Member Info checkbox to display the details of the members in the grid report.
+You can select the Show posts checkbox and provide a title to display the collab post. Select the Collab folder from the Pulse Folders.
+Select the Show tasks checkbox and save the changes. The member information is displayed for the members of this report.
+To view the information, you can click any member or go to the Actions column.
+The Actions column is displayed only for the following cases:
+```
+```
+Case 1' : When you select the Show posts checkbox or Show tasks checkbox.
+```
+```
+Case 2 : When you select the Show Member Info checkbox (the grid has more than one row field and level attribute).
+```
+```
+Case 3 : When the grid linking is done. o9 supports various widget bindings, such as Grid-Grid, Graph-Grid.
+For more information on these widget bindings, see section b in the Link Filters (Widget Bindings).
+```
+vii. **Set Translations** : This option allows you to add translations. You can click **Set Translations** and make the relevant changes in the Set Translations dialog box. You need to
+click the relevant language in the **Select Language** list and type the relevant translation in the **Title** field.
+
+
+viii. **History** : This option allows you to view the history of the widget.
+ix. **Remove** : This option allows you to delete the widget from this container.
+
+```
+The data navigation for a boolean measure is working unlike before, where the navigation links were not displayed when the user configured data
+navigation for a boolean measure.
+```
+```
+Functionality Description
+```
+1. Login to o9 Web UI with the relevant credentials.
+2. Select a report with boolean measure.
+3. Click the Design Layout icon **( )** on the upper-right of the Platform header. The Design layout is displayed.
+4. Click **( )** next to the report name. The options are displayed.
+
+```
+Boolean Measure Navigation
+```
+
+5. Click **Set navigation links**. The report is displayed.
+6. Click the **Data navigation links** list.
+7. Select the boolean measure for which you need to add links.
+8. Add a few navigation links.
+9. Click Save.
+10. Go to the **Boolean MG** column of the report.
+11. Click **( )**. The configured navigation links for the boolean measure are displayed.
+
+
+
+```
+Configurators needed a means to have KPIs/Metrics placed directly underneath the available charts, so that it is easier for the user to view them as a single unit.
+```
+1. Login to the o9 Web UI with the relevant credentials.
+2. Click the Design layout icon.
+3. Click **( )** on a page where you need to add the new View.
+4. Enter the details as required.
+5. Click **( )**. The View is created.
+6. Click **( )** to add reports to the View.
+7. Add any chart report as required.
+
+### Composite Widgets
+
+
+8. Observe that there is a new option below the chart to drag and drop other reports.
+9. Search for any preferred KPI tile.
+10. Use the drag and drop operation to the drop area.
+
+The KPI tile is added to the container and makes it a composite widget.
+
+11. Observe that a new Drop area is available to the right of the KPI tile.
+12. Use the drag and drop operation to move other KPI tiles as required.
+
+The new KPI tile is added to the composite widget.
+
+
+13. Add more tiles as required.
+14. Click the ellipsis icon of the container.
+15. Click the Set Block Reports Height icon.
+16. Select the height for each row of the composite widget as required.
+17. Click **( )**.
+18. Click the Design layout icon again to switch to runtime mode. The composite widget is displayed in a single container.
+
+
+19. Hover over the title of the chart. A new Expand Report icon is displayed.
+20. Click the Expand Report icon. The chart is displayed in expanded mode within the composite widget container.
+
+```
+Limitations
+```
+```
+Currently only charts (line chart, vertical bar chart, horizontal bar chart, gauge chart, pie chart, waterfall chart), KPI tiles, thumbnail grids, and Pivot Tables are available to be
+added as a composite widgets.
+If the container height is <50%, then composite widget option will not be available.
+If container width is < 50%, the composite widget list drop option will not show up.
+When reports are tabbed within a container, the composite widget option is not displayed.
+Only KPI tiles can be placed horizontally adjacent.
+KPI tiles can be added in a composite widget above with charts added below.
+```
+```
+This enhancement introduces a new 'Auto Load Data' flag for views, allowing reports to be loaded with data automatically when accessed by the user or held empty until the user
+has applied scope filters or clicked ‘Refresh Data’.
+```
+### Manual Trigger of Data Load on Reports
+
+
+Many planning users will need to access Views containing large volumes of data, which take time to open and require adjustments with filters and
+layout changes. They can then be configured as desired before being loaded with data. This will improve efficiency and reduce frustration over user
+interface loading times.
+The 'Auto Load Data' flag will allow planners to quickly configure these reports without waiting for any data to be initially loaded into the user
+interface. Since data is loaded only after configuration by clicking 'Apply' (from scope filters) or 'Refresh Data' (from global header), this will provide
+a better user experience.
+
+**Prerequisites**
+
+```
+A View with the relevant reports configured.
+```
+**Setup**
+
+1. Log in to a tenant with the relevant credentials.
+2. Go to the Design layout for the View that needs to be manually loaded.
+3. Click Edit in the View settings.
+
+
+The **Edit Minimize Data Load** dialog box is displayed with the new **Auto Load Data** checkbox.
+
+4. Select the **Auto Load Data** checkbox.
+
+```
+The Auto Load Data flag is enabled by default.
+To disable it, click to clear the Auto Load Data flag.
+```
+5. Click the **Save** icon **( )**. The changes are saved.
+
+**User Workflow**
+
+```
+Any User > My Reports
+```
+1. Log in to a tenant with the relevant credentials.
+2. Go to a View with the **Auto Load Data** flag disabled. The reports on the View are displayed without data loaded.
+
+
+3. Click the layout and make any changes as required.
+4. Click the scope filters and make any changes as required. The **Apply** button is displayed with an indicator icon.
+5. Click the Apply button. The View displays the data with the selected filters and layout changes.
+
+
+```
+This functionality is currently applicable only to ‘Pivot / Indented Grid / Master Data’ and ‘Line /Horizontal Bar/ Area/Waterfall Chart’ type reports. If any other report
+type is present on the View, data is loaded automatically for those reports.
+Clicking the ‘Refresh Data’ button available on the global header, will also load the data.
+For the charts ‘Setting’, ‘Toggle’ and ‘Cumulative’ options will be enabled even without any data. Data will be loaded after clicking ‘Apply’ on filter or ‘Refresh Data’
+on the global ribbon.
+For pivot reports ‘Download’, ‘Layout’, ‘Action Button’ (non-widget binding),’ Open o9 Excel’, ‘Measure set’ options will be enabled even without any data. Data will
+be loaded after clicking ‘Apply’ on filter or ‘Refresh Data’ on the global ribbon.
+Once a View is loaded, any further changes to filters or layout, etc., will automatically trigger reloading.
+A browser refresh or a session timeout will make the view load without any data.
+View/Scope filters, layout settings, etc., will load with the default favorite selections.
+Favorites can be created without data loaded for the view.
+The PDF Download will be downloaded with data irrespective of the above View-level settings.
+Online meetings will not display data if View capture is done when data is not loaded.
+Recapture/Refresh Deck for Online Meetings will display data irrespective of the above view-level settings.
+When navigating between Views through navigation settings or action buttons or global workflows or back button data will be displayed irrespective of destination
+view-level settings.
+```
+The following 6 pages are in this category, out of 6 total.
+
+```
+Add New Page—Field Description
+Add New View—Field Description
+Add New Workspace—Field Description
+```
+```
+Link Filters (Widget Bindings)
+```
+```
+Navigation Link Types
+```
+```
+Platform Wiki - Table of Contents
+```
+Retrieved from ‘https://platformwiki.o9solutions.com/index.php?title=Category:Layout_Configuration&oldid=36418’
+
+## Pages in category ‘Layout Configuration’
+
+### A
+
+### L
+
+### N
+
+### P
+
+
+**This page was last modified on 2 June 2025, at 08:09.**
+
+
